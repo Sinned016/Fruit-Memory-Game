@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Memory Game</title>
+
+    <link rel="icon" type="image/x-icon" href="/assets/faviconBanana.ico">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+
+    <div class="start-game-container">
+        <h1>Fruit Memory Game</h1>
+        <label for="player-1">Player 1</label>
+        <input required type="text" id="player-1" placeholder="Choose Player 1 Name">
+        <label for="player-2">Player 2</label>
+        <input required type="text" id="player-2" placeholder="Choose Player 2 Name">
+        <button class="start-game-btn">Start Game</button>
+    </div>
+
+    <div class="game-container">
+        <div class="card-container">
+
+        </div>
+        <aside class="scoreboard">
+            <h2 class="current-player"></h2>
+
+            <h3 class="player-one-name"></h3>
+            <h3 class="player-two-name"></h3>
+            <h3 class="player-one-wins"></h3>
+            <h3 class="player-two-wins"></h3>
+            <button class="reset-game">Reset Game</button>
+        </aside>
+        <div class="history-container">
+            <h2>History</h2>
+        </div>
+    </div>
+
+    <div class="winner-container">
+        <h1 class="winner-message"></h1>
+        <button class="restart-game">Play again?</button>
+    </div>
+</body>
+
+</html>
